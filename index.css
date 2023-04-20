@@ -1,0 +1,129 @@
+@import url(common.css);
+
+/* Layout */
+#header{
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  height: 70px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Header */
+#header h1{
+  position: absolute;
+  left: 20px;
+  top: 10px;
+  font-size: 32px;
+}
+#header h1 a{color: #fff;}
+#gnb{
+  position: absolute;
+  right: 20px;
+  top: 30px;
+  display: flex;
+}
+#gnb li{
+  padding: 0 20px;
+  color: #fff;
+}
+#gnb li a:hover{
+  color: #000;
+}
+
+/* Page Number */
+#tt { 
+  position:fixed; 
+  z-index:1000; 
+  left:0; 
+  top:200px; 
+  background:red; 
+  padding:5px; 
+  font-size:100px; 
+  color:white; 
+}
+
+/* Dot Button */
+#dot{
+  position:fixed; 
+  z-index:1000; 
+  right:10%; 
+  top:50%;
+  transform: translateY(-50%);
+}
+#dot span{
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin: 20px 0;
+  cursor: pointer;
+}
+#dot span.active{
+  display: block;
+  width: 10px;
+  height: 60px;
+  border-radius: 15px;
+  background-color: crimson;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+/* Container */
+#container{
+  width: 100%;
+  color: #fff;
+}
+.inner{
+  width: 1200px;
+  margin: auto;
+}
+#container h2 { 
+  font-size:250px; 
+  padding-top:70px; 
+  font-weight:100; 
+  letter-spacing:-10px; 
+}
+
+#home{
+  height: 100vh;
+  background-color: yellowgreen;
+}
+
+#about{
+  height: 100vh;
+  background-color: royalblue;
+  overflow: hidden;
+  position: relative;
+}
+.about_contents{
+  /* border: 1px solid #000; */
+  width: 400px;
+  height: 700px;
+  position: absolute;
+  right: 15%;
+  bottom: 50px;
+}
+.about_contents p:nth-child(2){ /* mobile-1 */
+  position: absolute;
+  top: 120%;
+  right: 0;
+}
+.about_contents p:nth-child(1){ /* mobile-2 */
+  position: absolute;
+  top: 40px;
+  right: 25px;
+  opacity: 0;
+}
+
+
+#works{
+  height: 100vh;
+  background-color: orange;
+}
+
+#contact{
+  height: 100vh;
+  background-color: #333;
+}
