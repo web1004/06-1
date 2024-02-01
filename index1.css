@@ -1,6 +1,6 @@
 @import url(common.css);
 
-/* Layout */
+/* Header */
 #header{
   position: fixed;
   z-index: 1000;
@@ -8,8 +8,6 @@
   height: 70px;
   background: rgba(255, 255, 255, 0.3);
 }
-
-/* Header */
 #header h1{
   position: absolute;
   left: 20px;
@@ -27,9 +25,7 @@
   padding: 0 20px;
   color: #fff;
 }
-#gnb li a:hover{
-  color: #000;
-}
+#gnb li a:hover{color: #000;}
 
 /* Page Number */
 #tt { 
@@ -116,7 +112,6 @@
   right: 25px;
   opacity: 0;
 }
-
 
 #works{
   height: 100vh;
